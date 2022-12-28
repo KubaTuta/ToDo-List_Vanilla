@@ -1,12 +1,5 @@
 const tasks = [
-   {
-      content: "coś 1",
-      done: false,
-   },
-   {
-      content: "coś 2222222",
-      done: true,
-   },
+   
 ];
 
 const addNewTask = () => {
@@ -57,10 +50,10 @@ const render = () => {
 
    for (const task of tasks) {
       htmlString += `
-      <li${task.done ? " style=\"text-decoration: line-through\"" : ""}>
-      <button class="js-done">ptaszek</button>
-      ${task.content}
-      <button class="js-remove">usun</button>
+      <li${task.done ? " style=\"text-decoration: line-through\"" : ""} class="list__li">
+      <div><button class="js-done list__birdie">✔</button></div>
+      <div class="list__text">${task.content}</div>
+      <div><button class="js-remove list__remove">🗑</button></div>
       </li>
       `
    };
