@@ -6,61 +6,19 @@ html {
     box-sizing: inherit;
 }
 
-.list {
-    max-width: 800px;
-    background-color: rgb(231, 224, 224);
-    padding: 20px;
+.body {
+    display: flex;
 }
 
-.list__block {
-    display: flex;
+.list__ofTasks {
     background-color: white;
     padding: 10px;
-    margin: 1px;
-    flex-wrap: wrap;
+    margin: 1px 0px;
 }
 
 .list__block--list {
-        background-color: white;
-        padding: 20px;
-        margin: 1px;
-        list-style-type: none;
-}
-
-.list__input {
-    justify-content: stretch;
-    align-items: stretch;
-    flex-grow: 1;
-    overflow-x: auto;
-}
-
-.addButton {
-    color: white;
-    background-color: teal;
-    border: none;
-    margin: 0px 0px 0px 10px;
-}
-
-.list__li {
-    display: flex;
-    justify-content: stretch;
-    padding-left: 0-100px;
-}
-
-.list__birdie { 
-    background-color: green;
-    color: white;
-    border: none;
-}
-
-.list__text {
-flex-grow: 1;
-}
-
-.list__remove {
-    
-    background-color: crimson;
-    border: none;
-    color: white;
-   
+    background-color: white;
+    padding: 20px;
+    margin: 1px 0px;
+    list-style-type: none;
 }

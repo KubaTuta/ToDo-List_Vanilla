@@ -6,31 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="script/script.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/simpleDivs.css">
+  <link rel="stylesheet" href="style/addTasks.css">
+  <link rel="stylesheet" href="style/list.css">
   <title>Lista zadań</title>
 </head>
 
 <body class="body">
   <div class="list">
     <h1>Lista zadań</h1>
-    <label>
-      <h3 class="list__block">Dodaj nowe zadanie</h3>
-    </label>
+    <h3 class="list__taskCommand">Dodaj nowe zadanie</h3>
     <form class="js-form">
-      <div class="list__block">
-          <input class="list__input js-newTask" type="text" placeholder="Co jest do zrobienia?">
+      <div class="list__addNewTask">
+        <input class="list__input js-newTask" type="text" placeholder="Co jest do zrobienia?">
         <button class="addButton">Dodaj zadanie</button>
       </div>
     </form>
-      <label>
-        <h3 class="list__block">Lista zadań</h3>
-      </label>
+    <label>
+      <h3 class="list__ofTasks">Lista zadań</h3>
+    </label>
     <div class="list__block--list">
       <ul class="js-tasks">
-    </ul>
+      </ul>
     </div>
-    
+
   </div>
 </body>
 

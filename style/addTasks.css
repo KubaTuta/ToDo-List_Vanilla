@@ -1,0 +1,21 @@
+.list__addNewTask {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    margin: 1px 0px 10px;
+    flex-wrap: wrap;
+}
+
+.list__input {
+    flex-grow: 1;
+    flex-basis: px;
+}
+
+.addButton {
+    color: white;
+    background-color: teal;
+    border: none;
+    flex-basis: 150px;
+    flex-grow: 1;
+}
