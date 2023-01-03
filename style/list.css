@@ -1,14 +1,25 @@
+.list__listSection {
+    background-color: white;
+    padding: 20px;
+    margin: 1px 0px;
+    list-style-type: none;
+}
+.list__ul {
+    padding-left: 0px;
+}
+
 .list__li {
     display: flex;
     justify-content: stretch;
     border-bottom: 1px solid rgb(231, 224, 224);
-    line-height: 2;
+    line-height: 2.5;
 }
 
 .list__birdie {
     background-color: green;
     color: white;
     border: none;
+    margin-right: 5px;
 }
 
 .list__text {

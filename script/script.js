@@ -1,16 +1,16 @@
 const tasks = [
-   
+
 ];
 
-const addNewTask = () => {
-   const newTaskElement = document.querySelector(".js-newTask").value.trim();
+const addNewTask = (taskTrimmed) => {
 
-   if (newTaskElement === "") {
+
+   if (taskTrimmed === "") {
       return;
    }
    else {
       tasks.push({
-         content: newTaskElement,
+         content: taskTrimmed,
       });
       render();
    }
@@ -66,8 +66,14 @@ const render = () => {
 
 const onFormSubmit = (event) => {
    event.preventDefault();
+   const newTaskElement = document.querySelector(".js-newTask");
+   const taskTrimmed = document.querySelector(".js-newTask").value.trim();
 
-   addNewTask();
+   if (taskTrimmed !== "") {
+      addNewTask(taskTrimmed);
+      newTaskElement.value = "";
+   }
+   newTaskElement.focus();
 };
 
 const init = () => {
