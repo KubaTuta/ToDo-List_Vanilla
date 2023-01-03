@@ -1,9 +1,7 @@
 const tasks = [
-
 ];
 
 const addNewTask = (taskTrimmed) => {
-
 
    if (taskTrimmed === "") {
       return;
@@ -61,7 +59,6 @@ const render = () => {
    tasksElement.innerHTML = htmlString;
 
    bindEvents();
-
 };
 
 const onFormSubmit = (event) => {
