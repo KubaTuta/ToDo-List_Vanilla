@@ -24,7 +24,8 @@
 
 .list__text {
     flex-grow: 1;
-
+    inline-size: 100px;
+    overflow-wrap: break-word;
 }
 
 .list__remove {
