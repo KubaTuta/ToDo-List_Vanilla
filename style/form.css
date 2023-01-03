@@ -1,0 +1,19 @@
+.section__addNewTask {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.addButton {
+    color: white;
+    background-color: teal;
+    border: none;
+}
+
+@media (max-width: 400px) {
+    .section__addNewTask {
+        grid-template-columns: 1fr;
+    }
+}
+   

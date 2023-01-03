@@ -12,31 +12,34 @@
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" href="style/simpleDivs.css">
-  <link rel="stylesheet" href="style/addTasks.css">
   <link rel="stylesheet" href="style/list.css">
+  <link rel="stylesheet" href="style/form.css">
   <title>Lista zadań</title>
 </head>
 
 <body class="body">
-  <div class="list">
-    <h1>Lista zadań</h1>
-    <h3 class="list__taskCommand">Dodaj nowe zadanie</h3>
-    <form class="js-form">
-      <div class="list__addNewTask">
+
+  <h1>Lista zadań</h1>
+  
+  <section class="section">
+    <h2 class="section__header">Dodaj nowe zadanie</h2>
+    <form class="js-form section__addNewTask">
         <input class="list__input js-newTask" type="text" placeholder="Co jest do zrobienia?">
-        <button class="addButton">Dodaj zadanie</button>
-      </div>
+        <button class="addButton">Dodaj zadanie</button>   
     </form>
-    <label>
-      <h3 class="list__ofTasks">Lista zadań</h3>
-    </label>
-    <div class="list__listSection">
+  </section>
+
+
+  <section class="section">
+    <h2 class="section__header">Lista zadań</h2>
+    <div class="list">
       <ul class="js-tasks list__ul">
       </ul>
     </div>
 
-  </div>
+  </section>
+
+
 </body>
 
 </html>

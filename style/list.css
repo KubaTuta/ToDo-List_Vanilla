@@ -1,5 +1,4 @@
-.list__listSection {
-    background-color: white;
+.list {
     padding: 20px;
     margin: 1px 0px;
     list-style-type: none;
