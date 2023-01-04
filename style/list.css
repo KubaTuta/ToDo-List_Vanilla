@@ -3,6 +3,7 @@
     margin: 1px 0px;
     list-style-type: none;
 }
+
 .list__ul {
     padding-left: 0px;
 }
@@ -10,8 +11,16 @@
 .list__li {
     display: flex;
     justify-content: stretch;
-    border-bottom: 1px solid rgb(231, 224, 224);
+    border-bottom: 1px solid rgb(102, 86, 192);
     line-height: 2.5;
+}
+
+.list__li--underlined {
+    display: flex;
+    justify-content: stretch;
+    border-bottom: 1px solid rgb(219, 20, 20);
+    line-height: 2.5;
+    text-decoration: line-through;
 }
 
 .list__birdie {
@@ -19,6 +28,10 @@
     color: white;
     border: none;
     margin-right: 5px;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    margin-top: 5px;
 }
 
 .list__text {
@@ -26,9 +39,19 @@
     inline-size: 100px;
     overflow-wrap: break-word;
 }
-
+.list__text--underlined {
+    flex-grow: 1;
+    inline-size: 100px;
+    overflow-wrap: break-word;
+    text-decoration: line-through;
+}
 .list__remove {
     background-color: crimson;
     border: none;
     color: white;
+    margin-left: 5px;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    margin-top: 5px;
 }

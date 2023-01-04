@@ -1,4 +1,5 @@
-const tasks = [
+{
+   const tasks = [
 ];
 
 const addNewTask = (taskTrimmed) => {
@@ -48,10 +49,16 @@ const render = () => {
 
    for (const task of tasks) {
       htmlString += `
-      <li${task.done ? " style=\"text-decoration: line-through\"" : ""} class="list__li">
-      <div><button class="js-done list__birdie">✔</button></div>
-      <div class="list__text">${task.content}</div>
-      <div><button class="js-remove list__remove">🗑</button></div>
+      <li class="list__li">
+      <button class="js-done list__birdie">
+      ${task.done ? "✔" : ""}
+      </button>
+      <span class="list__text${ task.done ? " list__text--underlined" : ""}">
+      ${task.content}
+      </span>
+      <button class="js-remove list__remove">
+      🗑
+      </button>
       </li>
       `
    };
@@ -81,5 +88,4 @@ const init = () => {
 };
 
 init();
-
-
+}
