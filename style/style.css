@@ -26,3 +26,12 @@ margin: 1px 0px 10px;
     margin: 1px 0px;
     border-bottom: 1px solid #ddd;
 }
+
+.section__buttons {
+    border: none;
+    color: teal;
+    background-color: white;
+}
+.section__buttons:hover {
+    color: hsl(180, 100%, 35%);
+}
