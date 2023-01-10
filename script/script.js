@@ -82,12 +82,9 @@
    };
 
    const renderTasks = () => {
-      let htmlString = "";
-      const tasksElement = document.querySelector(".js-tasks");
-
-      for (const task of tasks) {
-         htmlString += `
-      <li class="list__li">
+      const taskToHtml = task => `
+      <li class="
+      list__li${task.done && hideDoneTasks ? " list__li--hidden" : ""}">
       <button class="js-done list__birdie">
       ${task.done ? "✔" : ""}
       </button>
@@ -99,16 +96,21 @@
       </button>
       </li>
       `
+      const tasksElement = document.querySelector(".js-tasks");
+      tasksElement.innerHTML = tasks.map(taskToHtml).join("");
       };
 
-      tasksElement.innerHTML = htmlString;
-   };
+   
+   
 
    const renderButtons = () => {
       const buttonsElement = document.querySelector(".js-buttons");
 
+      if (!tasks.length) {
+         buttonsElement.innerHTML = "";
+         return;
+      }
       
-
       buttonsElement.innerHTML = `
       <button class="section__buttons js-toggleHideDoneTasksButton">
       ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
