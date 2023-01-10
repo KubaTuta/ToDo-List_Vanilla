@@ -27,6 +27,10 @@ margin: 1px 0px 10px;
     border-bottom: 1px solid #ddd;
 }
 
+.disabled {
+    display: none;
+
+}
 .section__buttons {
     border: none;
     color: teal;
