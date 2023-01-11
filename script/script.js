@@ -98,10 +98,7 @@
       `
       const tasksElement = document.querySelector(".js-tasks");
       tasksElement.innerHTML = tasks.map(taskToHtml).join("");
-      };
-
-   
-   
+   };
 
    const renderButtons = () => {
       const buttonsElement = document.querySelector(".js-buttons");
@@ -110,13 +107,13 @@
          buttonsElement.innerHTML = "";
          return;
       }
-      
+
       buttonsElement.innerHTML = `
-      <button class="section__buttons js-toggleHideDoneTasksButton">
+      <button class="section__buttons section__buttons--hide js-toggleHideDoneTasksButton">
       ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
       </button>
-      <button class="section__buttons js-allDoneButtonsButton
-      ${tasks.every(({done}) => done) ? " disabled" : ""}">
+      <button class="section__buttons section__buttons--done js-allDoneButtonsButton"
+      ${tasks.every(({ done }) => done) ? " disabled" : ""}>
       Ukończ wszystkie
       </button>
       `

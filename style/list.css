@@ -11,7 +11,7 @@
 .list__li {
     display: flex;
     justify-content: stretch;
-    border-bottom: 1px solid rgb(102, 86, 192);
+    border-bottom: 1px solid hsl(249, 46%, 55%);
     line-height: 2.5;
 }
 .list__li--hidden {
@@ -21,20 +21,24 @@
 .list__li--underlined {
     display: flex;
     justify-content: stretch;
-    border-bottom: 1px solid rgb(219, 20, 20);
+    border-bottom: 1px solid hsl(0, 83%, 47%);
     line-height: 2.5;
     text-decoration: line-through;
 }
 
 .list__birdie {
-    background-color: green;
-    color: white;
+    background-color: hsl(120, 100%, 25%);
+    color: hsl(0, 0%, 100%);
     border: none;
     margin-right: 5px;
     height: 30px;
     width: 30px;
     padding: 0;
     margin-top: 5px;
+    transition: 1s;
+}
+.list__birdie:hover {
+    background-color: hsl(120, 100%, 35%);
 }
 
 .list__text {
@@ -49,12 +53,16 @@
     text-decoration: line-through;
 }
 .list__remove {
-    background-color: crimson;
+    background-color: hsl(348, 83%, 47%);
     border: none;
-    color: white;
+    color: hsl(0, 0%, 100%);
     margin-left: 5px;
     height: 30px;
     width: 30px;
     padding: 0;
     margin-top: 5px;
+    transition: 1s;
+}
+.list__remove:hover {
+    background-color: hsl(348, 83%, 60%);
 }

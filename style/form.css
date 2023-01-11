@@ -3,17 +3,28 @@
     grid-template-columns: 1fr auto;
     grid-gap: 10px;
     padding: 10px;
+
 }
 
 .addButton {
-    color: white;
-    background-color: teal;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(180, 100%, 25%);
     border: none;
+    transition: 1s;
+    height: 30px;
+}
+.addButton:hover {
+    background-color: hsl(180, 100%, 35%);
+    transform: scale(1.1);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .section__addNewTask {
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
+    }
+    .addButton:hover {
+        
+        transform: scale(1.05);
     }
 }
    
