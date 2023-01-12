@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    
 }
 
 *, ::after, ::before {
@@ -7,7 +8,7 @@ html {
 }
 
 .body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     justify-content: center;
     align-items: center;
     background-color: hsl(0, 13%, 89%);
