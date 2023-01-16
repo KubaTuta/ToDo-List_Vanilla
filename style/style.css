@@ -20,6 +20,7 @@ html {
 .section {
     background-color: hsl(0, 0%, 100%);
     margin: 1px 0px 10px;
+    
 }
 
 .section__header {
@@ -28,6 +29,7 @@ html {
     padding: 10px;
     margin: 1px 0px;
     border-bottom: 1px solid hsl(0, 0%, 87%);
+    align-items: center;
 }
 
 @media (max-width: 500px) {
@@ -38,6 +40,9 @@ html {
     .section__buttons {
         display: grid;
     }
+}
+.section__h2 {
+    margin: 0;
 }
 
 .section__buttons {

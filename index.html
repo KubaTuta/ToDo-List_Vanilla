@@ -21,27 +21,32 @@
 </head>
 
 <body class="body">
+  <main>
+    <h1>Lista zadań</h1>
 
-  <h1>Lista zadań</h1>
-
-  <section class="section">
-    <h2 class="section__header">Dodaj nowe zadanie</h2>
-    <form class="js-form section__addNewTask">
-      <input class="list__input js-newTask" type="text" placeholder="Co jest do zrobienia?">
-      <button class="addButton">Dodaj zadanie</button>
-    </form>
-  </section>
+    <section class="section">
+      <h2 class="section__header">Dodaj nowe zadanie</h2>
+      <form class="js-form section__addNewTask">
+        <input class="list__input js-newTask" type="text" placeholder="Co jest do zrobienia?">
+        <button class="addButton">Dodaj zadanie</button>
+      </form>
+    </section>
 
 
-  <section class="section">
-    <h2 class="section__header">Lista zadań<span class="js-buttons section__buttons"></span></h2>
+    <section class="section">
+      <header class="section__header">
+        <h2 class="section__h2">Lista zadań</h2>
+        <div class="js-buttons section__buttons"></div>
+      </header>
+      
+      <div class="list">
+        <ul class="js-tasks list__ul">
+        </ul>
+      </div>
 
-    <div class="list">
-      <ul class="js-tasks list__ul">
-      </ul>
-    </div>
+    </section>
+  </main>
 
-  </section>
 
 
 </body>
